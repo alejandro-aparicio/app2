@@ -1,0 +1,5 @@
+Django~=2.2.4
+#viernes 22 octubre
+#2
+#3
+#4

@@ -1,0 +1,31 @@
+
+
+<html>
+    <head>
+        <title>Aplicativo 2 - Proyecto Farma Line - Grupo 5</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    <body>
+
+<div>
+    <h1>Medicamentos</h1>
+</div>
+
+{% for post in posts %}
+    <div>
+
+        <h3>{{ post.nombre_medicamento }}</h3>
+        {{ post.descripción }} 
+        <p> publicado: {{ post.author }}
+        <p>	<img src="http://127.0.0.1:8000/media/{{ post.imagen }} ">
+        <p>{{ post.text|linebreaksbr }}</p>
+       <br>       <br>
+    </div>
+{% endfor %}
+
+
+
+
+    </body>
+</html>
